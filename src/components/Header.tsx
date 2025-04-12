@@ -20,7 +20,7 @@ async function Header() {
         <Image
           priority
           className="rounded-full"
-          src="/goatius.png"
+          src="/note-genie.png"
           height={60}
           width={60}
           alt="logo"
