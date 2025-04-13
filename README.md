@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 NoteGenie
 
-## Getting Started
+NoteGenie is a smart note-taking web app that helps users manage their notes and ask questions about them using AI. Powered by Gemini (Google GenAI), it provides intelligent answers based on your personal notes — all in a clean, responsive UI.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **🔐 Supabase Authentication**
+  - Secure user authentication and session handling.
+  - Notes stored and managed in Supabase database.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **📚 Note Management**
+  - Create, update, delete, and view all personal notes.
+  - Display notes in a responsive sidebar layout.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **💬 AI Assistant Integration**
+  - Ask questions about your notes using Gemini (Google GenAI).
+  - Context-aware answers rendered in semantic HTML.
 
-## Learn More
+- **🧠 Ask AI Modal**
+  - Built using ShadCN Dialog components.
+  - `useRef` for auto-focus and auto-height textarea.
+  - Tracks user questions and AI responses for coherent conversations.
 
-To learn more about Next.js, take a look at the following resources:
+- **🎨 Dark and Light Mode**
+  - Fully responsive theme switching using ShadCN theme provider.
+  - Clean UI adapts to user preference or system setting.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **📁 Sidebar Navigation**
+  - Sidebar built with ShadCN components.
+  - Displays all user notes for quick navigation and selection.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **🧠 Styled AI Responses**
+  - AI answers formatted in clean HTML.
+  - Styled via `ai-response.css` and rendered safely with `dangerouslySetInnerHTML`.
 
-## Deploy on Vercel
+- **💡 Smooth UX**
+  - Transitions handled using `useTransition` hook for a responsive feel.
+  - Auto-resizing input textarea for better writing experience.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠 Tech Stack
+
+- **Frontend**: React (via Next.js 15), Tailwind CSS, ShadCN UI
+- **Backend**: Next.js Server Actions, Supabase (Auth & DB)
+- **Authentication**: Supabase Auth
+- **Database**: Supabase (PostgreSQL)
+- **AI**: Google GenAI (Gemini 2.0 Flash model)
+- **Styling**: Tailwind CSS, ShadCN components, custom CSS
+- **State Management**: React hooks (`useState`, `useRef`, `useTransition`, `useContext`)
+- **Deployment**: Vercel
+
+---
+
+## 📦 Deployment
+
+This project is deployed on **[Vercel](https://note-genie-web-app.vercel.app/)**.
+
+## 🙏 Acknowledgement
+
+This project was originally inspired by a FreeCodeCamp tutorial. I made several improvements and customizations, including the integration of Google GenAI (Gemini) instead of the original AI model.
+
