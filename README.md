@@ -13,6 +13,9 @@ NoteGenie is a smart note-taking web app that helps users manage their notes and
 - **📚 Note Management**
   - Create, update, delete, and view all personal notes.
   - Display notes in a responsive sidebar layout.
+    
+- **🔍 Smart Note Search**
+  - Search your notes efficiently using fuzzy matching powered by Fuse.js.
 
 - **💬 AI Assistant Integration**
   - Ask questions about your notes using Gemini (Google GenAI).
@@ -49,6 +52,7 @@ NoteGenie is a smart note-taking web app that helps users manage their notes and
 - **Database**: Supabase (PostgreSQL)
 - **ORM**: Prisma
 - **AI**: Google GenAI (Gemini 2.0 Flash model)
+- **Search**: Fuse.js
 - **Styling**: Tailwind CSS, ShadCN components, custom CSS
 - **State Management**: React hooks (`useState`, `useRef`, `useTransition`, `useContext`)
 - **Deployment**: Vercel
