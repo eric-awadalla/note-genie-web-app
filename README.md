@@ -47,6 +47,7 @@ NoteGenie is a smart note-taking web app that helps users manage their notes and
 - **Backend**: Next.js Server Actions, Supabase (Auth & DB)
 - **Authentication**: Supabase Auth
 - **Database**: Supabase (PostgreSQL)
+- **ORM**: Prisma
 - **AI**: Google GenAI (Gemini 2.0 Flash model)
 - **Styling**: Tailwind CSS, ShadCN components, custom CSS
 - **State Management**: React hooks (`useState`, `useRef`, `useTransition`, `useContext`)
